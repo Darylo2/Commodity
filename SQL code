@@ -1,0 +1,12 @@
+# Commodity
+## Cleaned Yam production data. Source: FAOSTAT
+
+SELECT  
+  Area,
+  Value,
+  Flag_Description,
+  Year  
+FROM 
+  `leafy-brace-357720.Yam.Yam`
+WHERE
+  Year between 2018 and 2020 and Flag_Description = 'Official figure'
